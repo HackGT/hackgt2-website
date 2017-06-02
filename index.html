@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>HackGT // Atlanta, GA // September 25-27, 2015</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta property="og:url" content="https://hackgt.com"/>
+        <meta property="og:title" content="HackGT // Atlanta, GA // September 25-27, 2015"/>
+        <meta property="og:image" content="https://i.imgur.com/LhXNAJA.png"/>
+        <meta property="og:description" content="Discover the uncharted."/>
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/flashlight.css">;
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+    #content {
+      background-image: url('img/content-bg.png');
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+    .slide {
+      min-height: 100vh;
+      max-width: 100%;
+      display: block;
+      padding: 40px;
+    }
+    p {
+      color: white;
+    }
+    .row, .container {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%;
+    }
+    .container {
+      display: table;
+      padding: 0px;
+    }
+    .vertical-center {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+      body {
+        background-color: black;
+      }
+      .back-link a {
+        color: #4ca340;
+        text-decoration: none;
+        border-bottom: 1px #4ca340 solid;
+      }
+      .back-link a:hover,
+      .back-link a:focus {
+        color: #408536;
+        text-decoration: none;
+        border-bottom: 1px #408536 solid;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-family: 'Plak Black Extra Condensed', sans-serif;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        font-size: 6em;
+        letter-spacing: 5px;
+        line-height: 1em;
+        display: block;
+        -webkit-text-shadow: 0px 0px 15px #222222;
+        -text-shadow: 0px 0px 15px #222222;
+        text-shadow: 0px 0px 15px #222222;
+        -moz-text-shadow: 0px 0px 15px #222222;
+        -o-text-shadow: 0px 0px 15px #222222;
+        -ms-text-shadow: 0px 0px 15px #222222;
+        -khtml-text-shadow: 0px 0px 15px #222222;
+        margin: 0px !important;
+      }
+      h2 {
+        font-family: 'Lato', sans-serif;
+        color: #97b4ca;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        -webkit-text-shadow: 0px 0px 15px #DDDDDD;
+        -text-shadow: 0px 0px 15px #DDDDDD;
+        text-shadow: 0px 0px 15px #DDDDDD;
+        -moz-text-shadow: 0px 0px 15px #DDDDDD;
+        -o-text-shadow: 0px 0px 15px #DDDDDD;
+        -ms-text-shadow: 0px 0px 15px #DDDDDD;
+        -khtml-text-shadow: 0px 0px 15px #DDDDDD;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-family: 'Plak Black Extra Condensed', sans-serif;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        font-size: 3em;
+        letter-spacing: 5px;
+        line-height: 1em;
+        display: inline-block;
+        -webkit-text-shadow: 0px 0px 15px #222222;
+        -text-shadow: 0px 0px 15px #222222;
+        text-shadow: 0px 0px 15px #222222;
+        -moz-text-shadow: 0px 0px 15px #222222;
+        -o-text-shadow: 0px 0px 15px #222222;
+        -ms-text-shadow: 0px 0px 15px #222222;
+        -khtml-text-shadow: 0px 0px 15px #222222;
+      }
+      h4 {
+        color: #FFFFFF;
+        margin-bottom: 20px !important;
+      }
+      p {
+      }
+      .entry-header .inner {
+        text-align: left;
+        margin: 0 auto 20px auto;
+        width: 800px;
+      }
+      .entry-header { padding-top: 20px; background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+      .socialLinks {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .arrow {
+        color: gray;
+        display: inline-block;
+        margin: 50px;
+        border-right: 12px solid;
+        border-bottom: 12px solid;
+        width: 30px; height: 30px;
+        transform: rotate(45deg);
+      }
+      .apply-button {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 0;
+        width: 250px;
+        height: 70px;
+        border: 2px solid #FFD700;
+        border-radius: 40px;
+        background: transparent;
+        color: #FFD700;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+        transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+      }
+
+      .apply-button:hover {
+        border: 2px solid #FFD700;
+        background-color: #FFD700;
+        color: #fff;
+      }
+
+      .schedule-list {
+        padding-left: 0px;
+      }
+      .schedule-list li {
+        display: table-row;
+      }
+
+    .social-media {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: "socialicoregular";
+      font-size: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      -webkit-text-shadow: 0px 0px 15px #000000;
+      -text-shadow: 0px 0px 15px #000000;
+      text-shadow: 0px 1px 1px #000000;
+      -moz-text-shadow: 0px 0px 15px #000000;
+      -o-text-shadow: 0px 0px 15px #000000;
+      -ms-text-shadow: 0px 0px 15px #000000;
+      -khtml-text-shadow: 0px 0px 15px #000000;
+      -webkit-transition: all ease 0.7s;
+      -moz-transition: all ease 0.7s;
+      -o-transition: all ease 0.7s;
+      -ms-transition: all ease 0.7s;
+      transition: all ease 0.7s;
+    }
+
+    .social-media:hover {
+      color: #AAAAAA;
+      text-decoration: none;
+      -webkit-transition: all ease 0.7s;
+      -moz-transition: all ease 0.7s;
+      -o-transition: all ease 0.7s;
+      -ms-transition: all ease 0.7s;
+      transition: all ease 0.7s;
+    }
+
+    #sponsor-section .row {
+      margin-bottom: 50px;
+    }
+
+    #sponsor-section .row div img{
+      margin-bottom: 20px;
+    }
+    .grayHover{
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+    .grayHover:hover{
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    .switch {
+      position: relative;
+      display: block;
+      vertical-align: top;
+      width: 150px;
+      height: 30px;
+      padding: 3px;
+      margin: 0 10px 10px 0;
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+      background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+      border-radius: 18px;
+      box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .switch-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    .switch-label {
+      position: relative;
+      display: block;
+      height: inherit;
+      font-size: 10px;
+      text-transform: uppercase;
+      background: #eceeef;
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    }
+    .switch-label:before, .switch-label:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.5em;
+      line-height: 1;
+      -webkit-transition: inherit;
+      -moz-transition: inherit;
+      -o-transition: inherit;
+      transition: inherit;
+    }
+    .switch-label:before {
+      content: attr(data-off);
+      right: 11px;
+      color: #aaaaaa;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    }
+    .switch-label:after {
+      content: attr(data-on);
+      left: 11px;
+      color: #FFFFFF;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+    }
+    .switch-input:checked ~ .switch-label {
+      background: #E1B42B;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+    .switch-input:checked ~ .switch-label:before {
+      opacity: 0;
+    }
+    .switch-input:checked ~ .switch-label:after {
+      opacity: 1;
+    }
+    .switch-handle {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+      background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .switch-handle:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+      background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+      border-radius: 6px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+    }
+    .switch-input:checked ~ .switch-handle {
+      left: 100px;
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Transition
+    ========================== */
+    .switch-label, .switch-handle {
+      transition: All 0.3s ease;
+      -webkit-transition: All 0.3s ease;
+      -moz-transition: All 0.3s ease;
+      -o-transition: All 0.3s ease;
+    }
+    /* Switch Flat
+    ==========================*/
+    .switch-flat {
+      padding: 0;
+      background: #FFF;
+      background-image: none;
+    }
+    .switch-flat .switch-label {
+      background: #FFF;
+      border: solid 2px #eceeef;
+      box-shadow: none;
+    }
+    .switch-flat .switch-label:after {
+      color: #FFD700;
+    }
+    .switch-flat .switch-handle {
+      top: 4px;
+      left: 6px;
+      background: #dadada;
+      width: 22px;
+      height: 22px;
+      box-shadow: none;
+    }
+    .switch-flat .switch-handle:before {
+      background: #eceeef;
+    }
+    .switch-flat .switch-input:checked ~ .switch-label {
+      background: #FFF;
+      border-color: #FFD700;
+    }
+    .switch-flat .switch-input:checked ~ .switch-handle {
+      left: 120px;
+      background: #FFD700;
+      box-shadow: none;
+    }
+
+    .volunteer-link {
+      text-decoration: none;
+      font-weight: bold;
+      color: #FFD700;
+    }
+
+    .volunteer-link:link {
+      text-decoration: none;
+      font-weight: bold;
+      color: #FFD700;
+    }
+
+    .volunteer-link:visited {
+      text-decoration: none;
+      font-weight: bold;
+      color: #FFD700;
+    }
+
+    .volunteer-link:hover {
+      color: #FFFFFF;
+    }
+
+    </style>
+    <script>
+      //window.location = "/sponsors"; //redirecting homepage to sponsors for now
+    </script>
+    </head>
+    <body style="padding: 0px;" class="loading">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+     <main data-top="background-color: rgba(0,0,0,1)" data-center-bottom="background-color: rgba(0,0,0,1)" data--200p-top="background-color: rgba(0,0,0,1)" data-anchor-target="#slide-1">
+      <section id="slide-1" class="homeSlide" data-bottom="opacity: 0;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-1">
+        <div class="bcg" data-top="opacity: 1; width: 120%; height: 120%; top: -10%; left: -10%;" data-center="opacity: 1; width: 110%; height: 110%; top: -5%; left: -5%;" data-bottom="opacity: 0; width: 100%; height: 100%; top: 0%; left: 0%;" data-anchor-target="#slide-1"></div>
+        <div class="plaxEl" data-top="opacity: 1; position: fixed; top: 5%; width: 100%; left: 0;" data-center="opacity: 1;" data-10p-bottom="opacity: 0;" data-bottom="opacity: 0;" data-anchor-target="#slide-1">
+    
+          <div id="title-slide" class="slide row" id="splash">
+            <div id="splash-background"> </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <center>
+                  <img src="img/hackgt-logo.svg" style="width: 200px; height: 200px;">
+                  <h1>HACKGT // ATLANTA, GA</h1>
+                  <h1>SEPTEMBER 25-27, 2015</h1>
+                  <form action="https://www.hackgt.com/app">
+                    <button class="apply-button">Visit our Live App!</button>
+                  </form>
+                  <button style="border-width: 0; margin-top: 10px;"><img id="down-arrow" src="img/arrow-down.png" style="width: 36px;"/></button>
+                </center>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="quote-section" class="slide row" style="background-color: black;">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="vertical-center">
+            <div style="display: block; margin-left: auto; margin-right: auto; width: 50em;">
+              <center>
+                <p>You're standing at the edge of a remote jungle, machete in hand, adventure in your soul. About to begin a journey of a lifetime. You're anxious. On one hand, there's wayward failure. On the other, the opportunity to be a trailblazing hero, a modern Indiana Jones.</p>
+                <p style="margin-top: 20px;">Take that first step. Make a difference. Discover the uncharted.</p>
+                <button style="border-width: 0; margin-top: 100px;"><img id="down-arrow-2" src="img/arrow-down2.png" style="width: 36px;"/></button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slide row" style="background-color: black; height: 100vh;">
+        <div class="col-sm-0 col-md-0 col-lg-6">&nbsp;</div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="row">
+            <!-- <label id="switch" class="switch switch-flat" style="position: fixed; top: 20px; left: 20px; display: none; z-index: 9999;"> -->
+              <!-- <input id="switch-input" class="switch-input" type="checkbox" /> -->
+              <!-- <span class="switch-label" data-on="Go uncharted" data-off="Flip the lights"></span>  -->
+              <!-- <span class="switch-handle"></span>  -->
+            <!-- </label> -->
+          </div>
+        </div> <!-- content columns -->
+      </div> <!-- slide -->
+
+      <div id="content">
+      <center>
+      <div class="slide row" style="width: 75em;">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="faq-section">
+          <div class="row">
+            <div class="twelve columns">
+              <h3 style="text-align: center;">FAQ's</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="four columns">
+              <h4>What is HackGT?</h4>
+              <p>HackGT is the second iteration of Georgia Tech's official national hackathon. Over 1,000 hackers from across the nation will travel by bus and plane to represent their universities at the biggest event of its kind in the South. Grab up to 3 teammates and prepare to rock.</p>
+            </div>
+            <div class="four columns">
+              <h4>What will I eat?</h4>
+              <p>In true Southern hospitable fashion, we'll be providing the best food you can eat, fresh and healthy.</p>
+            </div>
+            <div class="four columns">
+              <h4>Do you offer travel reimbursement?</h4>
+              <p>We're offering up to $300 in travel reimbursements for eligible hackers. Indicate your needs in your application and we'll reach out personally to take care of you.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="four columns">
+              <h4>What should I bring?</h4>
+              <p>Everything you need to be a healthy and hygienic human being for two nights. After you pack your laptops, phones, chargers, headphones, and other electronic gear, be sure to grab your toothbrush, toothpaste, deodorant, contact solution, towel, and whatever else you may need. Keep it minimal.</p>
+            </div>
+            <div class="four columns">
+              <h4>Am I allowed to use past projects?</h4>
+              <p>Using past code is heavily discouraged - do you really want to ruin the fun? However, you're more than welcome to use open-source projects and libraries (e.g., Bootstrap) as well as existing platforms and services (like Twilio's API).</p>
+            </div>
+            <div class="four columns">
+              <h4>What's the cost of attending?</h4>
+              <p>HackGT is absolutely, 100% free of charge. We'll cover all of your meals and associated costs for the entire weekend. Take advantage of this.</p>
+            </div>
+          </div>
+        </div> <!-- content columns -->
+      </div> <!-- slide -->
+
+      <div class="slide row" style="width: 50em;">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="schedule-section">
+          <div class="row">
+            <div class="twelve columns">
+              <h3 style="text-align: center;">Schedule</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="four columns">
+              <h4>Friday</h4>
+              <ul class="schedule-list">
+                <li><p>4-7 PM // Registration</p></li>
+                <li><p>4:30-6:30 PM // Opening ceremonies</p></li>
+                <li><p>6:30-8:00 PM // Dinner</p></li>
+                <li><p>8 PM // Start of hacking</p></li>
+                <li><p>12 AM // Midnight snack</p></li>
+              </ul>
+            </div>
+            <div class="four columns">
+              <h4>Saturday</h4>
+              <ul class="schedule-list">
+                <li><p>12 AM-10 PM // SnackGT</p></li>
+                <li><p>10 PM // SnackGT part II</p></li>
+              </ul>
+            </div>
+            <div class="four columns">
+              <h4>Sunday</h4>
+              <ul class="schedule-list">
+                <li><p>9AM // End of hacking</p></li>
+                <li><p>7:30 AM // Start of breakfast</p></li>
+                <li><p>9:30 AM-12:30 PM // Expo and judging</p></li>
+                <li><p>1-2 PM // Finalist demos</p></li>
+                <li><p>2-3:30 PM // Closing ceremonies</p></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- content columns -->
+      </div>
+
+      <div class="slide row">
+        <center><h3>Sponsors</h3></center><br>
+        <div class="col-sm-0 col-md-1 col-lg-2">&nbsp;</div>
+        <div class="col-sm-12 col-md-10 col-lg-8" id="sponsor-section">
+          <div class="row">
+            <div class="twelve columns">
+              <a href="http://www.ionicsecurity.com">
+                <img src="img/ionicsecurity.png" class='grayHover' style="max-width: 100%; width: 400px; margin-top: 30px;"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns">
+              <a href="http://www.mantech.com">
+                <img src="img/mantech.png" class='grayHover' style="width: 300px; margin-top: 30px; padding-right: 20px;"/>
+              </a>
+            </div>
+            <div class="six columns">
+              <a href="http://www.apple.com">
+                <img src="img/Apple.png" class='grayHover' style="height: 110px; margin-left: 90px;"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="four columns">
+              <a href="http://www.microsoft.com">
+                <img src="img/Microsoft.png" class='grayHover' style="width: 250px; margin-top: 30px;"/>
+              </a>
+            </div>
+            <div class="four columns">
+              <center>
+                <a href="http://www.mailchimp.com">
+                  <img src="img/MailChimp.png" class='grayHover' style="width: 250px; margin-top: 30px;"/>
+                </a>
+              </center>
+            </div>
+            <div class="four columns">
+              <a href="http://www.air-watch.com">
+                <img src="img/airwatch.png" class='grayHover' style="width: 250px;"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="three columns">
+              <a href="http://www.delta.com">
+                <img src="img/delta.jpg" class='grayHover' style="width: 150px; margin-top: 30px;"/>
+              </a>
+            </div>
+            <div class="three columns">
+              <center>
+                <a href="http://www.capitalone.com">
+                  <img src="img/capitalone.png" class='grayHover' style="width: 150px;"/>
+                </a>
+              </center>
+            </div>
+            <div class="three columns">
+              <a href="http://www.goldmansachs.com">
+                <img src="img/goldman-sachs.jpg" class='grayHover' style="width: 150px;"/>
+              </a>
+            </div>
+            <div class="three columns">
+              <a href="http://www.ea.com">
+                <img src="img/ea.png" class='grayHover' style="width: 250px;"/>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one columns">
+            &nbsp;
+            </div>
+            <div class="three columns">
+              <a href="http://www.bloomberg.com">
+                <img src="img/Bloomberg.png" class='grayHover' style="width: 300px; margin-left: -20px; margin-right: 50px;  margin-left: -50px; padding-right: 100px;"/>
+              </a>
+            </div>
+            <div class="two columns">
+              <a href="http://www.a16z.com">
+                <img src="img/a16z.png" class='grayHover' style="max-width: 100px; margin-left: -50px;"/>
+              </a>
+            </div>
+            <div class="two columns">
+              <a href="http://www.predictivetechnologies.com/">
+                <img src="img/apt.png" class='grayHover' style="max-width: 150px; margin-top: -10px;"/>
+              </a>
+            </div>
+            <div class="three columns">
+              <a href="http://www.squareup.com">
+                <img src="img/square.png" class='grayHover' style="max-width: 200px; margin-left: 50px;"/>
+              </a>
+            </div>
+            <div class="one columns">
+            &nbsp;
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="four columns">
+                <a href="http://www.thalmic.com">
+                  <img src="img/ThalmicLabs.png" class='grayHover' style="max-width: 200px; margin-top: 40px;"/>
+                </a>
+              </div>
+              <div class="four columns">
+                <a href="http://www.statefarm.com">
+                  <img src="img/statefarm.png" class='grayHover' style="max-width: 150px;"/>
+                </a>
+              </div>
+              <div class="four columns">
+                <a href="http://www.pindropsecurity.com/">
+                  <img src="img/pindrop.png" class='grayHover' style="max-width: 200px; margin-top: 40px; "/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-0 col-md-1 col-lg-2">&nbsp;</div>
+      </div>
+
+      <div class="slide row">
+        <center>
+          <h3>Partnered with</h3>
+          <br>
+          <a href="http://www.mlh.io">
+            <img src="img/mlh-logo-small.png" style="display: inline-block; width: 12em; margin-top: 30px; margin-left: 40px; margin-right: 40px;"/>
+          </a>
+          <h3>and</h3>
+          <a href="http://www.techsquare.co">
+            <img src="img/techsquare.png" style="display: inline-block; width: 15em;  margin-left: 40px; "/>
+          </a>
+        </center>
+      </div>
+
+      <div class="slide row">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+          <h3>Judges</h3>
+          <h4>Coming soon...</h4>
+        </div>
+      </div>
+
+      <div class="slide row">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+          <div class="vertical-center">
+            <div style="display: block; margin-left: auto; margin-right: auto;">
+              <form action="https://hackgt.typeform.com/to/w6lfId">
+                <button class="apply-button">Volunteer</button>
+              </form>
+              <a href="https://hackgt.com/sponsor" style="text-decoration: none;"><h4>Sponsor us</h4></a>
+              <a id="facebook" class="social-media" href="https://facebook.com/hackgt">F</a>
+              <a id="twitter" class="social-media" href="https://twitter.com/thehackgt">T</a><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      </center>
+    </main>
+
+    <div class="flContainer flPiece">
+      <div class="fl flPiece" id="fl">
+        <div class="block1 flPiece"></div>
+        <div class="block2 flPiece"></div>
+        <div class="flspot flPiece"></div>
+        <div class="block3 flPiece"></div>
+        <div class="block4 flPiece"></div>
+      </div>
+    </div>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/imagesloaded.js"></script>
+
+    <script src="js/skrollr.js"></script>
+    <script src="js/_main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(".flPiece").css({
+        display: "none"
+      });
+      $(".flContainer").css({
+        display: 'block'
+      });
+      $("#fl").css({
+        top: ($(window).height()/2 - 2400) + "px",
+        left: ($(window).width()/2 - 2400) + "px"
+      });
+
+      $("#down-arrow").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#quote-section").offset().top
+        }, 2000);
+      });
+
+      $("#down-arrow-2").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#faq-section").offset().top
+        }, 2000);
+      });
+
+      flashlightOn = false;
+      var touchFlag = false;
+      var emptyFunction = function(e) { touchFlag = true; };
+      $("body").on('touchstart', emptyFunction);
+      $("body").on('touchmove', emptyFunction);
+      $("body").on('touchend', emptyFunction);
+      $(document).mousemove(function(e){
+        if(!touchFlag)
+        {
+          $("#fl").css({
+            top: (e.pageY - $(window).scrollTop() - 2400) + "px",
+            left: (e.pageX - 2400) + "px"
+          });
+          moveFlashlight(true);
+        }
+      });
+
+      // fallback for IE
+      $("#fl").click(function (event) {
+        $(this).toggle();
+        var link = document.elementFromPoint(event.clientX, event.clientY); // IE & FF
+        $(this).toggle();
+        if (link.tagName.toLowerCase() == 'a') {
+          window.location.href = link.href;
+        }
+        $(link).trigger('click');
+      });
+      var fldiv = document.getElementById('fl');
+      fldiv.style.display = 'block';
+
+      //$('.slide').not('#quote-section,#title-slide').css('background-image',"url('img/content-bg.png')"); // pav
+
+      var radius = 200;
+      updateFlashlight(radius);
+      $(window).scroll(function() {
+        var vpH = $(window).height(), // Viewport Height
+        st = $(window).scrollTop(), // Scroll Top
+        y = $("#quote-section").offset().top,
+        elementHeight = $("#quote-section").height();
+        if(y < (vpH + st - 2*elementHeight)) {
+          $("#switch").css({
+            display: "block"
+          });
+          flashlightOn = true;
+          moveFlashlight(true);
+        }
+        else {
+          $("#switch").css({
+            display: "none"
+          });
+          flashlightOn = false;
+          moveFlashlight(false);
+        }
+      });
+    });
+
+    $('#switch-input').change(function(){
+      moveFlashlight(true);
+    });
+
+    function moveFlashlight() {
+      if(flashlightOn && !$('#switch-input').is(':checked')) {
+        $(".flPiece").css({
+            display: "block"
+         });
+      }
+      else {
+        $(".flPiece").css({
+          display: "none"
+        });
+      }
+    }
+
+    function updateFlashlight(radiusOffset) {
+      radiusOffset -= 1;
+        $(".flspot").css({
+          top: "-=" + radiusOffset/2 + "px",
+          left: "-=" + radiusOffset/2 + "px",
+          width: "+=" + radiusOffset + "px",
+          height: "+=" + radiusOffset + "px"
+        });
+        $(".flContainer .fl .block1").css({
+          height: "-=" + radiusOffset/2 + "px"
+        });
+        $(".flContainer .fl .block2").css({
+          top: "-=" + radiusOffset/2 + "px",
+          width: "-=" + radiusOffset/2 + "px",
+          height: "+=" + radiusOffset + "px"
+        });
+        $(".flContainer .fl .block3").css({
+          top: "-=" + radiusOffset/2 + "px",
+          left: "+=" + radiusOffset/2 + "px",
+          width: "-=" + radiusOffset/2 + "px",
+          height: "+=" + radiusOffset + "px"
+        });
+        $(".flContainer .fl .block4").css({
+          top: "+=" + radiusOffset/2 + "px",
+          height: "-=" + radiusOffset/2 + "px"
+        });
+    }
+
+    function checkVisible(elm) {
+      var vpH = $(window).height(), // Viewport Height
+      st = $(window).scrollTop(), // Scroll Top
+      y = $(elm).offset().top,
+      elementHeight = $(elm).height();
+
+      return ((y < (vpH + st)) && (y > (st - elementHeight)));
+
+    }
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64687964-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
